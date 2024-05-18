@@ -2,7 +2,6 @@
 import HeroSection from "@/components/UI/HomePage/HeroSection/HeroSection";
 import { useAppSelector } from "@/redux/hooks";
 import { toogleThemes } from "@/redux/themeSlice/themeSlice";
-import { Typography } from "@mui/material";
 import React from "react";
 
 const HomePage = () => {

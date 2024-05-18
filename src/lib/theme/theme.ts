@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material/styles";
 export const theme = createTheme({
   palette: {
     primary: {
-      main: "#0059B1",
+      main: "#E49714",
     },
     secondary: {
       main: "#ECF5FF",
@@ -22,4 +22,4 @@ export const theme = createTheme({
     },
   },
 });
-theme.shadows[1] = "0px 5px 22px lightgray";
+theme.shadows[1] = "0px 5px 22px darkgreen";

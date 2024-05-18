@@ -18,24 +18,21 @@ import Image from "next/image";
 
 const heroSectionData = [
   {
-    backgroundImage:
-      "https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149138432.jpg?w=996&t=st=1715961262~exp=1715961862~hmac=039c5dda8d5df976f760959114c761ae8b30784d86a27caaa0a63f4d2b8c9706",
+    backgroundImage: "https://i.ibb.co/6JRZWg5/TNT-Banner.png",
     bannerImage: "https://i.ibb.co/d2bbKQ9/pngwing-com-7.png",
     upperBtnText: "featured Products",
     productName: "Yison celebrat sw6Pro Bluetooth Calling Smart Watch",
     price: "400",
   },
   {
-    backgroundImage:
-      "https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149138432.jpg?w=996&t=st=1715961262~exp=1715961862~hmac=039c5dda8d5df976f760959114c761ae8b30784d86a27caaa0a63f4d2b8c9706",
+    backgroundImage: "https://i.ibb.co/Nt0q404/TNT-Banner-1.png",
     bannerImage: "https://i.ibb.co/4jg479M/pngwing-com-8.png",
     upperBtnText: "featured Products",
     productName: "Yison celebrat sw6Pro Bluetooth Calling Smart Watch",
     price: "400",
   },
   {
-    backgroundImage:
-      "https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149138432.jpg?w=996&t=st=1715961262~exp=1715961862~hmac=039c5dda8d5df976f760959114c761ae8b30784d86a27caaa0a63f4d2b8c9706",
+    backgroundImage: "https://i.ibb.co/Nt0q404/TNT-Banner-1.png",
     bannerImage: "https://i.ibb.co/JcJyQ25/pngwing-com-17.png",
     upperBtnText: "featured Products",
     productName: "Yison celebrat sw6Pro Bluetooth Calling Smart Watch",
@@ -50,7 +47,7 @@ const intro = {
     x: 0,
     opacity: 1,
     rotate: 0,
-    transition: { duration: 0.5 },
+    transition: { duration: 1 },
   },
   visible: {
     opacity: 1,
@@ -150,7 +147,7 @@ const HeroSection = () => {
                         initial="hidden"
                         animate="visible"
                       >
-                        <Button sx={{ borderRadius: "20px" }}>
+                        <Button sx={{ borderRadius: "20px", color: "white" }}>
                           Featured product
                         </Button>
                       </motion.div>
@@ -193,6 +190,7 @@ const HeroSection = () => {
                             borderRadius: "20px",
                             paddingY: "8px",
                             marginTop: "10px",
+                            color: "white",
                           }}
                         >
                           shop now
