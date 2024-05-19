@@ -9,6 +9,7 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DashboardIcon from "@mui/icons-material/Dashboard";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import { toogleTheme, toogleThemes } from "@/redux/themeSlice/themeSlice";
@@ -16,6 +17,7 @@ import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import Badge, { BadgeProps } from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 const StyledBadge = styled(Badge)<BadgeProps>(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -78,7 +80,7 @@ const Navbar = () => {
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        paddingX={10}
+        paddingX={8}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Image
@@ -93,6 +95,9 @@ const Navbar = () => {
             width={150}
             alt="alternative"
           ></Image>
+        </Box>
+        <Box>
+          <Typography color="black">Call Now</Typography>
         </Box>
         <Box>
           {" "}
@@ -139,6 +144,7 @@ const Navbar = () => {
             direction="row"
             justifyContent="space-between"
             alignItems="center"
+            gap={22}
           >
             <Stack
               direction="row"
@@ -179,9 +185,27 @@ const Navbar = () => {
               >
                 <IconButton aria-label="cart">
                   <StyledBadge badgeContent={4} color="secondary">
-                    <ShoppingCartIcon />
+                    <ShoppingCartIcon fontSize="medium" />
                   </StyledBadge>
                 </IconButton>
+              </Typography>
+              <Typography
+                sx={{
+                  backgroundColor: "#E7E7E7",
+                  borderRadius: "50px",
+                  padding: "8px",
+                }}
+              >
+                <AccountCircleIcon fontSize="medium" />
+              </Typography>
+              <Typography
+                sx={{
+                  backgroundColor: "#E7E7E7",
+                  borderRadius: "50px",
+                  padding: "8px",
+                }}
+              >
+                <DashboardIcon fontSize="medium" />
               </Typography>
             </Stack>
             <IconButton
