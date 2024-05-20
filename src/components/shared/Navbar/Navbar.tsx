@@ -19,6 +19,8 @@ import Badge, { BadgeProps } from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Lottie from "lottie-react";
+import callLottie from "@/assets/lottie/callLottie.json";
 const StyledBadge = styled(Badge)<BadgeProps>(({ theme }) => ({
   "& .MuiBadge-badge": {
     right: -3,
@@ -81,6 +83,7 @@ const Navbar = () => {
         justifyContent="space-between"
         alignItems="center"
         paddingX={8}
+        paddingBottom={4}
       >
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Image
@@ -96,8 +99,23 @@ const Navbar = () => {
             alt="alternative"
           ></Image>
         </Box>
-        <Box>
-          <Typography color="black">Call Now</Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItem: "flex-start",
+          }}
+        >
+          <Box sx={{ height: "60px", width: "60px" }}>
+            {" "}
+            <Lottie animationData={callLottie}></Lottie>
+          </Box>
+          <Box>
+            <Typography color="black" fontWeight="bold">
+              Call Now
+            </Typography>
+            <Typography color="black">+8801886807417</Typography>
+          </Box>
         </Box>
         <Box>
           {" "}

@@ -133,7 +133,7 @@ const HeroSection = () => {
                     </motion.div>
                   </motion.div>
 
-                  <motion.div>
+                  <motion.div> 
                     <Box
                       sx={{
                         display: "flex",

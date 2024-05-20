@@ -16,7 +16,6 @@ const HomePage = () => {
     >
       <HeroSection />
       <Category />
-      <Title/>
     </div>
   );
 };
