@@ -20,6 +20,8 @@ import { styled } from "@mui/material/styles";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Lottie from "lottie-react";
+import TextField from "@mui/material/TextField";
+import SearchIcon from "@mui/icons-material/Search";
 import callLottie from "@/assets/lottie/callLottie.json";
 const StyledBadge = styled(Badge)<BadgeProps>(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -98,6 +100,29 @@ const Navbar = () => {
             width={150}
             alt="alternative"
           ></Image>
+        </Box>
+        <Box
+          width={350}
+          sx={{ fontSize: "25px", display: "flex", alignItems: "center" }}
+        >
+          <TextField
+            id="outlined-basic"
+            label="Search Product Here"
+            variant="outlined"
+            size="small"
+           fullWidth
+            sx={{ marginRight: 1 }}
+          />
+          <Button
+            variant="contained"
+            sx={{
+              height: "40px", // Adjust this value to match the height of the TextField
+              padding: "0 16px",
+              minWidth: "auto", // Ensure the button width fits the content
+            }}
+          >
+            <SearchIcon />
+          </Button>
         </Box>
         <Box
           sx={{
