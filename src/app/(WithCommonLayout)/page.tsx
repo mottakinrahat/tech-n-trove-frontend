@@ -1,6 +1,7 @@
 "use client";
 import Category from "@/components/UI/HomePage/Category/Category";
 import HeroSection from "@/components/UI/HomePage/HeroSection/HeroSection";
+import TrendingProducts from "@/components/UI/HomePage/TrendingProducts/TrendingProducts";
 import Title from "@/components/UI/Title/Title";
 import { useAppSelector } from "@/redux/hooks";
 import { toogleThemes } from "@/redux/themeSlice/themeSlice";
@@ -16,6 +17,7 @@ const HomePage = () => {
     >
       <HeroSection />
       <Category />
+      <TrendingProducts />
     </div>
   );
 };
