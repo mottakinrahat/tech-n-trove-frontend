@@ -1,4 +1,5 @@
 "use client";
+import BrandDisplay from "@/components/UI/HomePage/BrandDisplay/BrandDisplay";
 import Category from "@/components/UI/HomePage/Category/Category";
 import HeroSection from "@/components/UI/HomePage/HeroSection/HeroSection";
 import TrendingProducts from "@/components/UI/HomePage/TrendingProducts/TrendingProducts";
@@ -18,6 +19,7 @@ const HomePage = () => {
       <HeroSection />
       <Category />
       <TrendingProducts />
+      <BrandDisplay />
     </div>
   );
 };
