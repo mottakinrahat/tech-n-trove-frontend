@@ -110,7 +110,7 @@ const Navbar = () => {
             label="Search Product Here"
             variant="outlined"
             size="small"
-           fullWidth
+            fullWidth
             sx={{ marginRight: 1 }}
           />
           <Button
